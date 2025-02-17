@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Task List with Template Inheritance{% endblock %}
+{% block content %}
+    <u1>
+        {% for task in tasks %}
+            <li> {{ task }}</li>
+        {% endfor %}
+    </u1>
+{% endblock %}
