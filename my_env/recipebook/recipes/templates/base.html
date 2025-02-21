@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <title>{% block title %} Recipe Book  {% endblock %}</title>
+</head>
+<body>
+    <div id="content">
+        {% block content %}{% endblock %}
+        <a href="{% url '<recipelist>' recipes.link %}"> {{recipes.name}} </a>
+    </div>
+
+</body>
+</html>
