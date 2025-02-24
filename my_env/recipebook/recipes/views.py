@@ -68,11 +68,10 @@ def recipelist(request):
         }
     ]
 }
-    return render(request, 'recipe.html',ctx)
+    return render(request, 'recipelist.html',ctx)
 
 def recipe1(request):
-    ctx= {
-    {
+    ctx = {
     "name": "Recipe 1",
     "ingredients": [
         {
@@ -98,13 +97,11 @@ def recipe1(request):
     ],
     "link": "/recipe/1"
 }
-}
-    return render(request, 'recipe_list_using_variables.html',ctx)
+    return render(request, 'recipe_using_variable.html',ctx)
 
 
 def recipe2(request):
     ctx = {
-    {
     "name": "Recipe 2",
     "ingredients": [
         {
@@ -138,5 +135,5 @@ def recipe2(request):
     ],
     "link": "/recipe/2"
 }
-    }
-    return render(request, 'recipe_list_using_variables.html',ctx)
+    
+    return render(request, 'recipe_using_variable.html',ctx)
