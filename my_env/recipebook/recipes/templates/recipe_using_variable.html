@@ -6,10 +6,10 @@
 <h1>Recipe </h1>
 <br>
 <b> {{name}}</b>
-    <ul>
+    <ol>
         {% for ingredient in ingredients%}
-        <l1>{{ingredient.name}} - {{ingredient.quantity}}</l1>
+        <li>{{ingredient.name}} - {{ingredient.quantity}}</li>
         {% endfor %}
-    </ul>
-    <a href="/recipes/list/">return</a>
+    </ol>
+    <a href="/recipes/list/">Back to Homepage</a>
 {% endblock %}
